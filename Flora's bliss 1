@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flora's Bliss — Fresh flowers & bouquets</title>
+  <meta name="description" content="Flora's Bliss — hand-crafted bouquets and potted plants" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Snipcart CSS -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="#">Flora's Bliss</a>
+    <nav class="nav">
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <!-- Snipcart cart button -->
+      <button class="cart-btn snipcart-checkout">Cart (<span class="snipcart-items-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hand‑crafted bouquets & potted plants</h1>
+        <p>Fresh, local blooms delivered with care.</p>
+        <a class="btn" href="#shop">Shop Bestsellers</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/700x420?text=Flora%27s+Bliss" alt="Flora's Bliss">
+      </div>
+    </section>
+
+    <section id="shop" class="products container">
+      <h2>Best Sellers</h2>
+      <div class="grid">
+        <!-- Product card: update data-item-... attributes for each product -->
+        <article class="card">
+          <img src="https://via.placeholder.com/400x300?text=Rose+Bouquet" alt="Classic Rose Bouquet">
+          <h3>Classic Rose Bouquet</h3>
+          <p class="price">$45.00</p>
+          <button
+            class="btn snipcart-add-item"
+            data-item-id="rose-bouquet-001"
+            data-item-name="Classic Rose Bouquet"
+            data-item-price="45.00"
+            data-item-url="/"
+            data-item-description="Hand-tied classic red roses"
+            data-item-image="https://via.placeholder.com/400x300?text=Rose+Bouquet">
+            Add to cart
+          </button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x300?text=Indoor+Potted" alt="Indoor Potted Plant">
+          <h3>Indoor Potted Plant</h3>
+          <p class="price">$27.00</p>
+          <button
+            class="btn snipcart-add-item"
+            data-item-id="potted-plant-001"
+            data-item-name="Indoor Potted Plant"
+            data-item-price="27.00"
+            data-item-url="/"
+            data-item-description="Easy care indoor plant in ceramic pot"
+            data-item-image="https://via.placeholder.com/400x300?text=Indoor+Potted">
+            Add to cart
+          </button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x300?text=Seasonal+Mix" alt="Seasonal Mix">
+          <h3>Seasonal Mix</h3>
+          <p class="price">$38.00</p>
+          <button
+            class="btn snipcart-add-item"
+            data-item-id="seasonal-mix-001"
+            data-item-name="Seasonal Mix"
+            data-item-price="38.00"
+            data-item-url="/"
+            data-item-description="Seasonal bouquet with handpicked blooms"
+            data-item-image="https://via.placeholder.com/400x300?text=Seasonal+Mix">
+            Add to cart
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>Flora's Bliss crafts beautiful arrangements from locally sourced blooms.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact / Custom Orders</h2>
+      <form name="contact">
+        <label>Your name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Flora's Bliss</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Snipcart JS: replace YOUR_SNIPCART_PUBLIC_API_KEY with your actual key -->
+  <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_PUBLIC_API_KEY"></div>
+</body>
+</html>
